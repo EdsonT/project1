@@ -8,6 +8,7 @@
 <div class="list-group" *ngFor="let recipe of recipes">
     
 </div> -->
-<app-recipe-item *ngFor="let recipe of recipes"
-[recipe]='recipe'
+<app-recipe-item *ngFor="let recipeIt of recipes"
+[recipe]='recipeIt'
+(itemEvent)="onItemClick(recipeIt)"
 ></app-recipe-item>
